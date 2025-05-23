@@ -20,20 +20,16 @@ body * {
 }
 
 @media only screen and (prefers-color-scheme: dark) {
-	main {
+	body {
 		--color-text: #ffffff;
-	}
-	nav svg {
 		--background-color: #0d1117;
 	}
 }
 
 @media only screen and (prefers-color-scheme: light) {
-	main {
+	body {
 		--color-text: #000000;
-	}
-	nav svg {
-		--background-color: #fff;
+		--background-color: #ffffff;
 	}
 }
 
@@ -58,7 +54,6 @@ nav {
 
 nav div {
 	padding: 0 3rem;
-	s
 }
 
 nav svg {
@@ -82,8 +77,18 @@ nav svg {
 					</svg>
 				</nav>
 				<main>
-				<h1>Обо мне</h1>
-
+					<h1>📌 Обо мне</h1>
+					<hr/>
+					<section class="about-me">
+					<p>Мне 28 лет, я живу в Перми.</p>
+					<p>Специализируюсь на веб-разработке с акцентом на создание современных и удобных интерфейсов.</p>
+					<ul>Опыт работы — 3 года, из них 2 года посвятил разработке решений для Bitrix24:
+						<li>Создаю адаптивные и визуально привлекательные веб-приложения</li>
+						<li>Настраиваю интеграции и оптимизирую бизнес-процессы под задачи клиентов</li>
+						<li>Работаю над улучшением пользовательского опыта (UX/UI)</li>
+					</ul>
+					<p>Постоянно изучаю новые технологии и инструменты, чтобы предлагать клиентам эффективные и инновационные решения. Готов к сложным задачам и интересным проектам!</p>
+					</section>
 				</main>
 				<footer>
 				</footer>
