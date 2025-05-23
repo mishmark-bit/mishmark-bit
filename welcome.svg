@@ -50,6 +50,8 @@ nav {
 	overflow: hidden;
 	line-height: 1em;
 	background: linear-gradient(135deg, #7599B9, #65568F);
+	border-box: none;
+	border: none;
 }
 
 nav div {
@@ -64,6 +66,8 @@ nav svg {
 	fill: var(--background-color);
 	width: 150%;
 	height: 40px;
+	border-box: none;
+	border: none;
 }
 			</style>
 			<body>
