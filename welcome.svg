@@ -45,6 +45,7 @@ main {
 }
 
 nav {
+	padding: 1rem 0;
 	width: 100%;
 	overflow: hidden;
 	line-height: 1em;
@@ -59,7 +60,7 @@ nav div {
 }
 
 nav svg {
-	top: 54px;
+	top: 86px;
 	position: absolute;
 	width: 100%;
 	transform: rotateY(180deg);
