@@ -23,11 +23,17 @@ body * {
 	main {
 		--color-text: #ffffff;
 	}
+	nav svg {
+		--background-color: #0d1117;
+	}
 }
 
 @media only screen and (prefers-color-scheme: light) {
 	main {
 		--color-text: #000000;
+	}
+	nav svg {
+		--background-color: #fff;
 	}
 }
 
@@ -60,7 +66,7 @@ nav svg {
 	position: relative;
 	width: 100%;
 	transform: rotateY(180deg);
-	fill: white;
+	fill: var(--background-color);
 	width: 150%;
 	height: 40px;
 }
@@ -77,7 +83,7 @@ nav svg {
 				</nav>
 				<main>
 				<h1>Обо мне</h1>
-				
+
 				</main>
 				<footer>
 				</footer>
