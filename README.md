@@ -4,8 +4,18 @@
 </main>
 <img src="https://github.com/mishmark-bit/mishmark-bit/blob/main/footer.png"/>
 
-<style>
-  main {
-    
+<h1>Hello world!</h1>
+
+h1 {
+  color: red;
+  animation: myanimation 2s infinite;
+}
+
+@keyframes myanimation {
+  from {
+    color: red;
   }
-</style>
+  to {
+    color: yellow;
+  }
+}
