@@ -60,7 +60,7 @@ nav div {
 }
 
 nav svg {
-	top: 86px;
+	top: 90px;
 	position: absolute;
 	width: 100%;
 	transform: rotateY(180deg);
