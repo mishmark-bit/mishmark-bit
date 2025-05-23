@@ -1,119 +1,43 @@
-.container {
+main {
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 1rem;
-}
-
-@media (min-width: 576px) {
-	.container {
-		max-width: 510px;
-		padding-right: 0;
-		padding-left: 0;
-	}
-}
-
-@media (min-width: 768px) {
-	.container {
-		max-width: 700px;
-	}
-}
-
-@media (min-width: 1024px) {
-	.container {
-		max-width: 950px;
-	}
-}
-
-@media (min-width: 1280px) {
-	.container {
-		max-width: 1200px;
-	}
-}
-
-@media (min-width: 1536px) {
-	.container {
-		max-width: 1450px;
-	}
-}
-
-
-a {
-	--pico-text-decoration: underline;
-}
-
-a.secondary,
-a.contrast {
-	--pico-text-decoration: underline;
-}
-
-small {
-	--pico-font-size: 0.875em;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	--pico-font-weight: 700;
-}
-
-h1 {
-	--pico-font-size: 2rem;
-	--pico-line-height: 1.125;
-	--pico-typography-spacing-top: 3rem;
-}
-
-h2 {
-	--pico-font-size: 1.75rem;
-	--pico-line-height: 1.15;
-	--pico-typography-spacing-top: 2.625rem;
-}
-
-h3 {
-	--pico-font-size: 1.5rem;
-	--pico-line-height: 1.175;
-	--pico-typography-spacing-top: 2.25rem;
-}
-
-h4 {
-	--pico-font-size: 1.25rem;
-	--pico-line-height: 1.2;
-	--pico-typography-spacing-top: 1.874rem;
-}
-
-h5 {
-	--pico-font-size: 1.125rem;
-	--pico-line-height: 1.225;
-	--pico-typography-spacing-top: 1.6875rem;
-}
-
-h6 {
-	--pico-font-size: 1rem;
-	--pico-line-height: 1.25;
-	--pico-typography-spacing-top: 1.5rem;
+	--static-color-text: #ffffff;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
-	.container {
+	main {
 		--color-text: #ffffff;
 	}
 }
 
 @media only screen and (prefers-color-scheme: light) {
-	.container {
+	main {
 		--color-text: #000000;
 	}
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span,
-p {
-	color: var(--color-text)
+nav,
+footer {
+	color: var(--static-color-text);
+}
+
+main {
+	color: var(--color-text);
+}
+
+nav {
+	width: 100%;
+	overflow: hidden;
+	line-height: 1em;
+	background: linear-gradient(135deg, #7599B9, #65568F);
+}
+
+nav svg {
+	top: 6px;
+	position: relative;
+	width: 100%;
+	transform: rotateY(180deg);
+	fill: white;
+	width: 150%;
+	height: 40px;
 }
