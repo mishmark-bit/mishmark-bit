@@ -52,6 +52,7 @@ nav {
 	background: linear-gradient(135deg, #7599B9, #65568F);
 	border-box: none;
 	border: none;
+	box-shadow: none;
 }
 
 nav div {
@@ -68,6 +69,7 @@ nav svg {
 	height: 40px;
 	border-box: none;
 	border: none;
+	box-shadow: none;
 }
 			</style>
 			<body>
