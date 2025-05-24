@@ -99,7 +99,7 @@ nav svg {
 footer svg {
 	width: 100%;
 	top: calc(var(--height-color-div) - var(--margin-svg-bottom));
-	transform: rotate(0.5turn) rotateY(180deg);
+	transform: rotate(0.5turn);
 }
 			</style>
 			<body>
