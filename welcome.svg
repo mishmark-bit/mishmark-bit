@@ -127,6 +127,7 @@ footer svg {
 
 					<section>
 						<h1>📌 Навыки</h1>
+						<!-- https://github.com/tandpfun/skill-icons?tab=readme-ov-file#icons-list -->
 						<!-- https://skillicons.dev/icons?i=vue,svelte,html,js,css,tailwind,figma,tauri,linux,mysql,postgres -->
 						<svg width="610.5" height="48" viewBox="0 0 3256 256" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 							<g transform="translate(0, 0)">
