@@ -1,4 +1,4 @@
-<svg fill="none" viewBox="0 0 900 1200" width="900" height="1200" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 900 1000" xmlns="http://www.w3.org/2000/svg">
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<style>
@@ -12,6 +12,9 @@ body {
 	box-sizing: border-box;
 
 	--static-color-text: #ffffff;
+	--height-color-div: 40px;
+	--margin-svg-top: 3px;
+	--margin-svg-bottom: 12px;
 }
 
 body * {
@@ -33,43 +36,70 @@ body * {
 	}
 }
 
-nav,
-footer {
-	color: var(--static-color-text);
-}
-
 main {
 	width: 100%;
 	margin: 0 auto;
 	color: var(--color-text);
 }
 
-nav {
-	padding: 1rem 0;
+main section {
+	margin: 0 0 3rem;
+	position: relative;
+}
+
+main section:not(:last-child):after {
+  content: ""; 
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -2rem;
+  height: 1px;
+  background-color: var(--color-text);
+}
+
+nav,
+footer {
+	line-height: 1em;
+}
+
+nav div, 
+footer div {
+	color: var(--static-color-text);
 	width: 100%;
 	overflow: hidden;
-	line-height: 1em;
 	background: linear-gradient(135deg, #7599B9, #65568F);
-	border-box: none;
-	border: none;
-	box-shadow: none;
+	min-height: 100px
 }
 
 nav div {
 	padding: 0 3rem;
 }
 
-nav svg {
-	top: 86px;
-	position: absolute;
+footer div {
+	padding: 1.5rem 3rem 0;
+}
+
+nav svg,
+footer svg {
+	position: relative;
 	width: 100%;
-	transform: rotateY(180deg);
 	fill: var(--background-color);
-	width: 150%;
-	height: 40px;
+	height: var(--height-color-div);
 	border-box: none;
 	border: none;
 	box-shadow: none;
+}
+
+nav svg {
+	width: 150%;
+	top: calc((var(--height-color-div) * -1) + var(--margin-svg-top));
+	transform: rotateY(180deg);
+}
+
+footer svg {
+	width: 110%;
+	top: calc(var(--height-color-div) - var(--margin-svg-bottom));
+	transform: rotate(0.5turn) rotateY(180deg);
 }
 			</style>
 			<body>
@@ -83,9 +113,8 @@ nav svg {
 					</svg>
 				</nav>
 				<main>
+					<section>
 					<h1>📌 Обо мне</h1>
-					<hr/>
-					<section class="about-me">
 					<p>Мне 28 лет, я живу в Перми.</p>
 					<p>Специализируюсь на веб-разработке с акцентом на создание современных и удобных интерфейсов.</p>
 					<ul>Опыт работы — 3 года, из них 2 года посвятил разработке решений для Bitrix24:
@@ -95,8 +124,26 @@ nav svg {
 					</ul>
 					<p>Постоянно изучаю новые технологии и инструменты, чтобы предлагать клиентам эффективные и инновационные решения. Готов к сложным задачам и интересным проектам!</p>
 					</section>
+
+					<section>
+					<h1>📌 Обо мне</h1>
+					<p>Мне 28 лет, я живу в Перми.</p>
+					<p>Специализируюсь на веб-разработке с акцентом на создание современных и удобных интерфейсов.</p>
+					<ul>Опыт работы — 3 года, из них 2 года посвятил разработке решений для Bitrix24:
+						<li>Создаю адаптивные и визуально привлекательные веб-приложения</li>
+						<li>Настраиваю интеграции и оптимизирую бизнес-процессы под задачи клиентов</li>
+						<li>Работаю над улучшением пользовательского опыта (UX/UI)</li>
+					</ul>
+					<p>Постоянно изучаю новые технологии и инструменты, чтобы предлагать клиентам эффективные и инновационные решения. Готов к сложным задачам и интересным проектам!</p>
+					</section>
+
 				</main>
 				<footer>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 120" preserveAspectRatio="none">
+						<path d="M985.66,92.83C906.67,70,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"></path>
+					</svg>
+					<div>
+					</div>
 				</footer>
 			</body>
 		</div>
